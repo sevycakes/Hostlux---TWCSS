@@ -1,3 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+}
+
+@layer components {
+
+    .container {
+        @apply max-w-[90rem] w-full mx-auto p-6
+    }
+    .body {
+        @apply font-mulish
+    }
+
+    /* HEADER */
+
+    .header {
+        @apply bg-hlBlue lg:bg-banner lg:bg-cover
+    }
+    .header_navD {
+        @apply hidden lg:flex justify-between
+    }
+    .nav_bar {
+        @apply flex gap-4 items-center
+    }
+    .navigation {
+        @apply flex gap-12 text-white font-semibold
+    }
+    .nav_link {
+        @apply flex items-center gap-8
+    }
+    .search {
+        @apply px-6 pl-8 border-r-2 border-hlGray
+    }
+    .search ul li a i {
+        @apply w-4 h-4
+    }
+    .language {
+        @apply flex gap-2 items-center
+    }
+    .language img {
+        @apply w-[18px] h-[14px]
+    }
+    .language ul {
+        @apply flex text-white gap-1
+    }
+    .language ul li a i {
+        @apply w-2
+    }
+    .registerBtn a {
+        @apply flex gap-2 items-center
+    }
+    .header_navM {
+        @apply flex items-center justify-between relative lg:hidden
+    }
+    .toggle_menu {
+        @apply lg:hidden;
+    }
+    .toggle_menu span {
+        @apply w-[1.5rem] h-[.3rem] bg-hlWhite block rounded-full
+    }
+    .toggle_menu span:nth-child(2) {
+        @apply my-1;
+    }
+    .toggle_menu.open span:first-child {
+        @apply transform translate-y-[8px] rotate-[45deg]
+    }
+    .toggle_menu.open span:nth-child(2) {
+        @apply opacity-0 
+    }
+    .toggle_menu.open span:last-child {
+        @apply transform translate-y-[-9px] rotate-[-45deg]
+    }
+    .nav_menu {
+        @apply absolute overflow-hidden h-0 w-[100vw] bg-hlLight top-[3.5rem] left-[-1.5rem] duration-500 transition-all
+    }
+    .nav_menu.open {
+        @apply h-[381px] duration-500 transition-all
+    }
+    .nav_menu ul {
+        @apply flex flex-col gap-4
+    }
+    .nav_menu ul li {
+       @apply border-b-2 py-3 px-2
+    }
+    .nav_menu ul li a {
+        @apply text-[14px] pl-4
+    }
+
+    /* BANNER */
+
+    .banner {
+        @apply bg-banner bg-cover bg-center
+    }
+    .banner_wrapper {
+        @apply flex flex-col lg:flex-row lg:items-center lg:justify-between my-[70px]
+    }
+    .bannerTxt {
+        @apply text-hlWhite
+    }
+    .bpg ul {
+        @apply flex gap-2 items-center w-fit rounded-sm my-[11px] py-[6px] px-[16.5px]
+    }
+    .bpg ul li h4 {
+        @apply text-base font-urbanist
+    }
+    .bannerTxt h1 {
+        @apply text-[clamp(30px,4vw,56px)] font-urbanist font-bold
+    }
+    .bannerTxt p {
+        @apply text-base text-hlGray min-w-[330px] max-w-[635px] mt-[26px] mb-[36px]
+    }
+    .getStarted {
+        @apply flex flex-col md:flex-row md:gap-8 md:items-center lg:flex-row gap-4 lg:gap-8 lg:items-center
+    }
+    .gsImg img {
+        @apply w-[129px] h-[60px]
+    }
+    .gsTxt p {
+        @apply text-[18px] font-semibold text-hlWhite mt-[10px] lg:border-l-2 lg:pl-4
+    }
+
+    /* PRICING */
+
+    .pricing {
+        @apply bg-pricing bg-cover h-[3450px] md:h-[1850px] lg:h-[1050px]
+    }
+    .features_wrapper {
+        @apply relative
+    }
+    .features {
+        @apply flex flex-wrap w-full top-[-5rem] absolute
+    }
+    .feature_tabs {
+        @apply w-[310px] mb-[30px] px-[12px] mx-auto
+    }
+    .feature_content {
+        @apply pt-[40px] pb-[32px] px-[40px] bg-hlWhite border rounded-lg
+    }
+    .feature_content img {
+        @apply w-[50px] h-[50px]
+    }
+    .feature_content h3 {
+        @apply text-[20px] font-urbanist font-semibold mt-[30px]
+    }
+    .prices {
+        @apply w-full mt-[80px]
+    }
+    .prices h1 {
+        @apply text-center text-[clamp(17px,4vw,40px)] font-urbanist font-bold h-[160px]
+    }
+    .pricingArea {
+        @apply flex flex-wrap w-full
+    }
+    .cardImg img {
+        @apply w-[70px] h-[70px]
+    }
+    .pricing_cards {
+        @apply bg-hlWhite border-t-4 pt-[35px] px-[30px] pb-[23px] min-w-[312px] md:min-w-[336px] lg:min-w-[336px] mx-auto mb-[30px]
+    }
+    .pricing_cards h2 {
+        @apply text-[clamp(24px,4vw,32px)] text-hlBlue font-semibold mt-[11px]
+    }
+    .pricing_cards h2 span {
+        @apply text-base text-hlGray font-mulish
+    }
+    .pricing_cards h3 {
+        @apply text-[22px] font-semibold pt-[11px] mt-[13px] pb-[5px] border-t-2
+    }
+    .pricing_cards p {
+        @apply text-base text-hlGray font-mulish
+    }
+    .pricing_cards a {
+        @apply mt-[30px]
+    }
+    .pricing_cards a i {
+        @apply rotate-[-45deg] text-hlBlue
+    }
+    .pricing_cards ul li a {
+        @apply flex items-center text-base text-hlGray font-mulish
+    }
+    .cardList ul li a img {
+        @apply w-3 h-[14px] mr-3
+    }
+}
+
+@layer utilities {
+    .btn {
+        @apply inline-block py-[11px] px-[31px] rounded-md text-base text-white bg-hlBlue
+    }
+    .btnGs {
+        @apply inline-block py-[10px] px-[45px] rounded-md text-base text-black border border-hlBlue bg-white
+    }
+}

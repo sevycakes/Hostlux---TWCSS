@@ -26,6 +26,14 @@ module.exports = {
         hlLight: "#f8f9fa",
         hlDark: "#212529",
       },
+      fontFamily: {
+        'mulish': ["Mulish", "sans-serif"],
+        'urbanist': ["Urbanist", "sans-serif"]
+      },
+      backgroundImage: {
+        'banner': "url(../dist/img/banner.jpg)",
+        'pricing': "url(../dist/img/pricing-bg.jpg)",
+      }
     },
   },
   plugins: [],
