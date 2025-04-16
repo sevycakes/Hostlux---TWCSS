@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         hlBlue: "#0d6efd",
+        hlBlueDark: "#041341",
         hlIndigo: "#6610f2",
         hlPurple: "#6f42c1",
         hlPink: "#d63384",
@@ -15,6 +16,7 @@ module.exports = {
         hlTeal: "#20c997",
         hlCyan: "#0dcaf0",
         hlWhite: "#fff",
+        hlDWhite: "#f1f4fb",
         hlGray: "#6c757d",
         hlGrayDark: "#343a40",
         hlPrimary: "#0d6efd",
@@ -33,6 +35,8 @@ module.exports = {
       backgroundImage: {
         'banner': "url(../dist/img/banner.jpg)",
         'pricing': "url(../dist/img/pricing-bg.jpg)",
+        'category': "url(../dist/img/category.jpg)",
+        'proved': "url(../dist/img/proved-bg.jpg)",
       }
     },
   },
