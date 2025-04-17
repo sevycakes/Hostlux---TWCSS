@@ -242,6 +242,25 @@
     .itemContent p {
         @apply text-base text-hlGray font-mulish mb-4
     }
+
+    /* FAQ AREA */
+
+    .faq_content p {
+        @apply h-0 overflow-hidden transition-all
+    }
+    .faq_content p.open {
+        @apply h-fit transition-all
+    }
+    .faq_icon {
+        @apply transition-all
+    }
+    
+    .faq_icon.open span:last-child {
+        @apply hidden transition-all
+    }
+    /* #custom-controls button.tns-nav-active {
+        @apply bg-hlBlue;
+    } */
 }
 
 @layer utilities {

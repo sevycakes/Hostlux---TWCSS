@@ -27,6 +27,7 @@ module.exports = {
         hlDanger: "#dc3545",
         hlLight: "#f8f9fa",
         hlDark: "#212529",
+        hlBGrad: "rgba(19, 132, 255, 0.30196078431372547)",
       },
       fontFamily: {
         'mulish': ["Mulish", "sans-serif"],
@@ -37,6 +38,7 @@ module.exports = {
         'pricing': "url(../dist/img/pricing-bg.jpg)",
         'category': "url(../dist/img/category.jpg)",
         'proved': "url(../dist/img/proved-bg.jpg)",
+        'testimonial': "url(../dist/img/testi_bg.jpg)",
       }
     },
   },
