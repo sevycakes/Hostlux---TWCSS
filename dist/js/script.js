@@ -22,11 +22,11 @@ links.forEach((link) => {
     });
 });
 
-// TINY SLIDER
+// TESTIMONIAL SLIDER
 
 const tnslider = tns({
     container: ".testimonial_stage",
-    items: 1,  // Default to 1 item visible on mobile
+    items: 1,
     slideBy: 'page',
     autoplay: false,
     controls: false,
@@ -36,13 +36,13 @@ const tnslider = tns({
     gutter: 20,
     responsive: {
         375: {
-            items: 1,  // 1 item visible on small screens (mobile)
+            items: 1,
         },
         768: {
-            items: 2,  // 2 items visible on medium screens (tablets)
+            items: 2,
         },
         1024: {
-            items: 3,  // 3 items visible on large screens (desktop)
+            items: 3,
         }
     }
 });
