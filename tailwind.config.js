@@ -39,6 +39,7 @@ module.exports = {
         'category': "url(../dist/img/category.jpg)",
         'proved': "url(../dist/img/proved-bg.jpg)",
         'testimonial': "url(../dist/img/testi_bg.jpg)",
+        'footer': "url(../dist/img/footer_bg.jpg)",
       }
     },
   },

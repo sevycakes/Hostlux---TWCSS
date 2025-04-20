@@ -258,9 +258,10 @@
     .faq_icon.open span:last-child {
         @apply hidden transition-all
     }
-    /* #custom-controls button.tns-nav-active {
-        @apply bg-hlBlue;
-    } */
+    
+    .testimonial_card {
+        @apply !w-[312px] md:!w-[700px] lg:!w-[400px] mr-[20px] md:mr-[25px] ml-0 h-[450px] rounded-xl bg-hlBlue
+    }
 }
 
 @layer utilities {

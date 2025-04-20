@@ -26,23 +26,23 @@ links.forEach((link) => {
 
 const tnslider = tns({
     container: ".testimonial_stage",
-    items: 1, // or 2/3 depending on how many you want visible
+    items: 1,  // Default to 1 item visible on mobile
     slideBy: 'page',
     autoplay: false,
-    controls: false, // disables default prev/next buttons
+    controls: false,
     nav: true,
     navContainer: "#custom-controls .mx-auto",
     navAsThumbnails: true,
     gutter: 20,
     responsive: {
-        640: {
-            items: 1,
+        375: {
+            items: 1,  // 1 item visible on small screens (mobile)
         },
         768: {
-            items: 2,
+            items: 2,  // 2 items visible on medium screens (tablets)
         },
         1024: {
-            items: 3,
+            items: 3,  // 3 items visible on large screens (desktop)
         }
     }
 });
