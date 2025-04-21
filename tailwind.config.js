@@ -40,6 +40,17 @@ module.exports = {
         'proved': "url(../dist/img/proved-bg.jpg)",
         'testimonial': "url(../dist/img/testi_bg.jpg)",
         'footer': "url(../dist/img/footer_bg.jpg)",
+      },
+      animation: {
+        'oneBounce': "bounce-once 0.7s ease-in-out forwards",
+      },
+      keyframes: {
+        'bounce-once': {
+          '0%': { transform: 'translateY(-25%)', opacity: '1' },
+          '50%': { transform: 'translateY(0)' },
+          '70%': { transform: 'translateY(-10%)' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        }
       }
     },
   },
