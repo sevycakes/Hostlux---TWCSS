@@ -46,3 +46,14 @@ const tnslider = tns({
         }
     }
 });
+
+// BRAND SLIDER
+
+// const tnslider = tns({
+//     container: ".brand_content",
+//     items: "5",
+//     slideBy: true,
+//     mouseDrag: true,
+//     swipeAngle: false,
+//     speed: 400
+// });
